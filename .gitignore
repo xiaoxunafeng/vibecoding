@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.db
+
+# Env & secrets（各子目录已有 .gitignore，此处双重保障）
+.env
+backend/data/
+backend/tests/deepseek_api_report.log
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/*.local
+.DS_Store

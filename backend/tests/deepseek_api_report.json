@@ -1,0 +1,1088 @@
+{
+  "tested_at": "2026-09-09T17:48:09",
+  "base_url": "https://api.suyu.io/v1",
+  "model": "deepseek-v4-flash",
+  "openai_sdk_version": "2.46.0",
+  "tests": [
+    {
+      "name": "1_thinking_enabled",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "stream": true,
+        "messages_count": 1
+      },
+      "delta_fields_seen": {
+        "content": 30,
+        "function_call": 30,
+        "refusal": 30,
+        "role": 30,
+        "tool_calls": 30,
+        "reasoning_content": 30
+      },
+      "chunk_top_level_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "moderation",
+        "object",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "choice_fields_seen": [
+        "delta",
+        "finish_reason",
+        "index",
+        "logprobs"
+      ],
+      "reasoning_content": "We need to compare 9.11 and 9.8. This is a common trick question because people might think 9.11 is greater than 9.8 due to the digits after decimal, but actually 9.8 = 9.80, so 9.80 > 9.11. So 9.8 is greater. But the question asks: \"9.11 and 9.8, which is greater?\" So answer: 9.8 is greater.",
+      "content": "9.8 is greater than 9.11 because 9.8 is equivalent to 9.80, and 80 hundredths is larger than 11 hundredths.",
+      "finish_reasons": [
+        "stop"
+      ],
+      "raw_chunks_sample": [
+        {
+          "_index": 1,
+          "_t_ms": 5385,
+          "chunk": {
+            "id": "chatcmpl-9c23d569-0133-91cd-8ff1-b4e9f794eb3d",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "reasoning_content": "We"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947296,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 2,
+          "_t_ms": 5385,
+          "chunk": {
+            "id": "chatcmpl-9c23d569-0133-91cd-8ff1-b4e9f794eb3d",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": " need to compare"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947296,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 3,
+          "_t_ms": 5385,
+          "chunk": {
+            "id": "chatcmpl-9c23d569-0133-91cd-8ff1-b4e9f794eb3d",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": " 9.11"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947296,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 4,
+          "_t_ms": 5386,
+          "chunk": {
+            "id": "chatcmpl-9c23d569-0133-91cd-8ff1-b4e9f794eb3d",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": " and 9."
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947296,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 5,
+          "_t_ms": 5386,
+          "chunk": {
+            "id": "chatcmpl-9c23d569-0133-91cd-8ff1-b4e9f794eb3d",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": "8. This is a common trick"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947296,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 6,
+          "_t_ms": 5581,
+          "chunk": {
+            "id": "chatcmpl-9c23d569-0133-91cd-8ff1-b4e9f794eb3d",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": " question because people might"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947296,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 31,
+          "_t_ms": 6212,
+          "chunk": {
+            "id": "chatcmpl-9c23d569-0133-91cd-8ff1-b4e9f794eb3d",
+            "choices": [],
+            "created": 1788947296,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "completion_tokens": 139,
+              "prompt_tokens": 17,
+              "total_tokens": 156,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 102,
+                "rejected_prediction_tokens": null
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cache_write_tokens": null,
+                "cached_tokens": 0
+              }
+            }
+          }
+        }
+      ],
+      "usage": {
+        "completion_tokens": 139,
+        "prompt_tokens": 17,
+        "total_tokens": 156,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 102,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "response_id": "chatcmpl-9c23d569-0133-91cd-8ff1-b4e9f794eb3d",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": null,
+      "first_token_latency_ms": 5385,
+      "total_duration_ms": 6213,
+      "error": null,
+      "n_chunks": 31
+    },
+    {
+      "name": "2_thinking_disabled",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "stream": true,
+        "messages_count": 1
+      },
+      "delta_fields_seen": {
+        "content": 33,
+        "function_call": 33,
+        "refusal": 33,
+        "role": 33,
+        "tool_calls": 33
+      },
+      "chunk_top_level_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "moderation",
+        "object",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "choice_fields_seen": [
+        "delta",
+        "finish_reason",
+        "index",
+        "logprobs"
+      ],
+      "reasoning_content": "",
+      "content": "This is a trick question that often trips people up due to how we read numbers.\n\n**9.8 is greater than 9.11.**\n\nHere’s why:\n\n*   Think of the numbers as money: $9.11 is nine dollars and eleven cents.\n*   $9.80 (which is the same as 9.8) is nine dollars and eighty cents.\n*   Eighty cents is more than eleven cents.\n\nWhen comparing decimals, you look at the first digit after the decimal point.\n*   9.**8** (which is 9.80)\n*   9.**1** (which is 9.11)\n\nSince 8 is greater than 1, **9.8 is the larger number**.",
+      "finish_reasons": [
+        "stop"
+      ],
+      "raw_chunks_sample": [
+        {
+          "_index": 1,
+          "_t_ms": 5503,
+          "chunk": {
+            "id": "chatcmpl-6c67c79f-3309-9386-adec-b1ac3be4cede",
+            "choices": [
+              {
+                "delta": {
+                  "content": "This",
+                  "function_call": null,
+                  "refusal": null,
+                  "role": "assistant",
+                  "tool_calls": null
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947303,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 2,
+          "_t_ms": 5504,
+          "chunk": {
+            "id": "chatcmpl-6c67c79f-3309-9386-adec-b1ac3be4cede",
+            "choices": [
+              {
+                "delta": {
+                  "content": " is a trick",
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947303,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 3,
+          "_t_ms": 5504,
+          "chunk": {
+            "id": "chatcmpl-6c67c79f-3309-9386-adec-b1ac3be4cede",
+            "choices": [
+              {
+                "delta": {
+                  "content": " question that often",
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947303,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 4,
+          "_t_ms": 5504,
+          "chunk": {
+            "id": "chatcmpl-6c67c79f-3309-9386-adec-b1ac3be4cede",
+            "choices": [
+              {
+                "delta": {
+                  "content": " trips",
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947303,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 5,
+          "_t_ms": 5694,
+          "chunk": {
+            "id": "chatcmpl-6c67c79f-3309-9386-adec-b1ac3be4cede",
+            "choices": [
+              {
+                "delta": {
+                  "content": " people up due to how",
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947303,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 6,
+          "_t_ms": 5695,
+          "chunk": {
+            "id": "chatcmpl-6c67c79f-3309-9386-adec-b1ac3be4cede",
+            "choices": [
+              {
+                "delta": {
+                  "content": " we read numbers.\n\n**",
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947303,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 34,
+          "_t_ms": 6492,
+          "chunk": {
+            "id": "chatcmpl-6c67c79f-3309-9386-adec-b1ac3be4cede",
+            "choices": [],
+            "created": 1788947303,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "completion_tokens": 149,
+              "prompt_tokens": 17,
+              "total_tokens": 166,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cache_write_tokens": null,
+                "cached_tokens": 0
+              }
+            }
+          }
+        }
+      ],
+      "usage": {
+        "completion_tokens": 149,
+        "prompt_tokens": 17,
+        "total_tokens": 166,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "response_id": "chatcmpl-6c67c79f-3309-9386-adec-b1ac3be4cede",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": null,
+      "first_token_latency_ms": 5503,
+      "total_duration_ms": 6492,
+      "error": null,
+      "n_chunks": 34
+    },
+    {
+      "name": "3_default_no_params",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "stream": true,
+        "messages_count": 1
+      },
+      "delta_fields_seen": {
+        "content": 16,
+        "function_call": 16,
+        "refusal": 16,
+        "role": 16,
+        "tool_calls": 16,
+        "reasoning_content": 16
+      },
+      "chunk_top_level_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "moderation",
+        "object",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "choice_fields_seen": [
+        "delta",
+        "finish_reason",
+        "index",
+        "logprobs"
+      ],
+      "reasoning_content": "我们被问到：\"1+1等于几？用一句话回答\"。这是一个非常简单的问题。答案应该是2。但指令是\"用一句话回答\"，所以只需回答\"等于2\"或类似。注意不要多余。最终答案：2。",
+      "content": "1+1等于2。",
+      "finish_reasons": [
+        "stop"
+      ],
+      "raw_chunks_sample": [
+        {
+          "_index": 1,
+          "_t_ms": 2297,
+          "chunk": {
+            "id": "chatcmpl-44f4b262-aa22-93fb-8a7f-121c27fcada3",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "reasoning_content": "我们"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947307,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 2,
+          "_t_ms": 2298,
+          "chunk": {
+            "id": "chatcmpl-44f4b262-aa22-93fb-8a7f-121c27fcada3",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": "被问到"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947307,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 3,
+          "_t_ms": 2298,
+          "chunk": {
+            "id": "chatcmpl-44f4b262-aa22-93fb-8a7f-121c27fcada3",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": "：\"1"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947307,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 4,
+          "_t_ms": 2298,
+          "chunk": {
+            "id": "chatcmpl-44f4b262-aa22-93fb-8a7f-121c27fcada3",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": "+1等于"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947307,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 5,
+          "_t_ms": 2664,
+          "chunk": {
+            "id": "chatcmpl-44f4b262-aa22-93fb-8a7f-121c27fcada3",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": "几？用一句话回答\"。"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947307,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 6,
+          "_t_ms": 2664,
+          "chunk": {
+            "id": "chatcmpl-44f4b262-aa22-93fb-8a7f-121c27fcada3",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": "这是一个非常简单的问题。"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947307,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 17,
+          "_t_ms": 2672,
+          "chunk": {
+            "id": "chatcmpl-44f4b262-aa22-93fb-8a7f-121c27fcada3",
+            "choices": [],
+            "created": 1788947307,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "completion_tokens": 56,
+              "prompt_tokens": 13,
+              "total_tokens": 69,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 49,
+                "rejected_prediction_tokens": null
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cache_write_tokens": null,
+                "cached_tokens": 0
+              }
+            }
+          }
+        }
+      ],
+      "usage": {
+        "completion_tokens": 56,
+        "prompt_tokens": 13,
+        "total_tokens": 69,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 49,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "response_id": "chatcmpl-44f4b262-aa22-93fb-8a7f-121c27fcada3",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": null,
+      "first_token_latency_ms": 2297,
+      "total_duration_ms": 2672,
+      "error": null,
+      "n_chunks": 17
+    },
+    {
+      "name": "4_multiturn_with_reasoning_content",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "stream": true,
+        "messages_count": 3
+      },
+      "delta_fields_seen": {
+        "content": 34,
+        "function_call": 34,
+        "refusal": 34,
+        "role": 34,
+        "tool_calls": 34,
+        "reasoning_content": 34
+      },
+      "chunk_top_level_fields": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "moderation",
+        "object",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "choice_fields_seen": [
+        "delta",
+        "finish_reason",
+        "index",
+        "logprobs"
+      ],
+      "reasoning_content": "We need to count the number of 'r's in \"strawberry\". Let's spell it: s-t-r-a-w-b-e-r-r-y. So there are three 'r's? Actually, positions: third letter is r, then eighth letter is r, ninth letter is r? Let's list: s (1), t (2), r (3), a (4), w (5), b (6), e (7), r (8), r (9), y (10). So three r's. Answer: 3.",
+      "content": "The word \"strawberry\" contains three Rs: one in the third position and two in the eighth and ninth positions. So, the answer is 3.",
+      "finish_reasons": [
+        "stop"
+      ],
+      "raw_chunks_sample": [
+        {
+          "_index": 1,
+          "_t_ms": 5840,
+          "chunk": {
+            "id": "chatcmpl-4580dc54-7de3-9da3-9ede-63d25e925646",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "reasoning_content": "We"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947314,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 2,
+          "_t_ms": 5841,
+          "chunk": {
+            "id": "chatcmpl-4580dc54-7de3-9da3-9ede-63d25e925646",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": " need to count"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947314,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 3,
+          "_t_ms": 5841,
+          "chunk": {
+            "id": "chatcmpl-4580dc54-7de3-9da3-9ede-63d25e925646",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": " the number of '"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947314,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 4,
+          "_t_ms": 5841,
+          "chunk": {
+            "id": "chatcmpl-4580dc54-7de3-9da3-9ede-63d25e925646",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": "r"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947314,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 5,
+          "_t_ms": 5841,
+          "chunk": {
+            "id": "chatcmpl-4580dc54-7de3-9da3-9ede-63d25e925646",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": "'s in \"strawberry\"."
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947314,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 6,
+          "_t_ms": 6058,
+          "chunk": {
+            "id": "chatcmpl-4580dc54-7de3-9da3-9ede-63d25e925646",
+            "choices": [
+              {
+                "delta": {
+                  "content": null,
+                  "function_call": null,
+                  "refusal": null,
+                  "role": null,
+                  "tool_calls": null,
+                  "reasoning_content": " Let's spell it"
+                },
+                "finish_reason": null,
+                "index": 0,
+                "logprobs": null
+              }
+            ],
+            "created": 1788947314,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": null
+          }
+        },
+        {
+          "_index": 35,
+          "_t_ms": 6711,
+          "chunk": {
+            "id": "chatcmpl-4580dc54-7de3-9da3-9ede-63d25e925646",
+            "choices": [],
+            "created": 1788947314,
+            "model": "deepseek-v4-flash",
+            "object": "chat.completion.chunk",
+            "moderation": null,
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "completion_tokens": 148,
+              "prompt_tokens": 72,
+              "total_tokens": 220,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": null,
+                "reasoning_tokens": 114,
+                "rejected_prediction_tokens": null
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cache_write_tokens": null,
+                "cached_tokens": 0
+              }
+            }
+          }
+        }
+      ],
+      "usage": {
+        "completion_tokens": 148,
+        "prompt_tokens": 72,
+        "total_tokens": 220,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 114,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "response_id": "chatcmpl-4580dc54-7de3-9da3-9ede-63d25e925646",
+      "response_model": "deepseek-v4-flash",
+      "system_fingerprint": null,
+      "first_token_latency_ms": 5840,
+      "total_duration_ms": 6711,
+      "error": null,
+      "n_chunks": 35
+    }
+  ],
+  "summary": {
+    "delta_fields_union": {
+      "content": 113,
+      "function_call": 113,
+      "refusal": 113,
+      "role": 113,
+      "tool_calls": 113,
+      "reasoning_content": 80
+    },
+    "chunk_top_level_fields_union": [
+      "choices",
+      "created",
+      "id",
+      "model",
+      "moderation",
+      "object",
+      "service_tier",
+      "system_fingerprint",
+      "usage"
+    ],
+    "choice_fields_union": [
+      "delta",
+      "finish_reason",
+      "index",
+      "logprobs"
+    ],
+    "stream_usage_supported": true,
+    "conclusion": "见各 test 的 delta_fields_seen / finish_reasons / usage"
+  }
+}
